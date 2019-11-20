@@ -1,0 +1,13 @@
+.board-container td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: .5s;
+}
+td {
+    background-color: rgb(255, 118, 93);
+}
+
+.white{
+    background-color: #fff;
+}
