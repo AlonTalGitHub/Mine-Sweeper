@@ -134,7 +134,7 @@ function cellClicked(cellI, cellJ) {
         cell.isShown = true;
         gGame.shownCount++;
     }
-    showAllNeighborsNotMines(gBoard, cellI, cellJ);
+    showAllNeighborsRecursive(gBoard, cellI, cellJ);
     renderBoard(gBoard);
     checkGameOver();
 }
@@ -235,12 +235,9 @@ function showHint() {
         if (cell.isMine || cell.isShown) continue;
         if (isNeighborMineOrShown(gBoard, randI, randJ)) continue;
         showCellAndNeighbors(gBoard, randI, randJ);
+        renderBoard(gBoard);
         setTimeout(hideCellAndNeighbors(gBoard, randI, randJ), 1000);
+        renderBoard(gBoard);
         isHintSucceed = true;
-
     }
-
-
 }
-
-

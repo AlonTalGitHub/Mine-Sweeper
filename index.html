@@ -7,19 +7,19 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body onload="initGame()">
-  <div class="smiley-container"></div>
-  <div class="board-container"></div>
-  <div>
+  <div class="smiley-container" align="center"></div>
+  <div class="board-container" align="center"></div>
+  <div align="center">
     <h3>Timer: </h3>
     <h3 id="timer">00 : 00</h3>
   </div>
-  <div>
+  <div align="center">
       <button onclick="changeLevel(4, 2)">Beginner</button>
       <button onclick="changeLevel(8, 12)">Medium</button>
       <button onclick="changeLevel(12, 30)">Expert</button>
       <button onclick="showHint()">Get a Hint</button>
   </div>
-  <div class="modal">
+  <div class="modal" align="center">
     <div class="modal-content"></div>
     <button onclick="initGame()">Play Again</button>
   </div>
